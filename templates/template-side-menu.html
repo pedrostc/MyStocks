@@ -1,0 +1,20 @@
+
+<md-sidenav class="md-sidenav-left" md-component-id="left">  
+    <md-toolbar layout="row" md-scroll-shrink>
+        <div class="md-toolbar-tools">
+            <h2>
+                Menu                
+            </h2>
+        </div>
+    </md-toolbar>      
+    <md-content layout-padding="" flex  md-theme="docs-dark" layout-align="center center">
+        <md-button title="Contato" class="md-primary launch" aria-label="Contato" ng-href="mailto:pedro.osternack@ostsolucoes.com.br">
+            <md-icon md-svg-icon="img/svg/email.svg" class="dark-theme-icon"></md-icon>
+            <span style="color: #fff">Contato</span>
+        </md-button><br />
+        <md-button title="Exportar Para CSV" class="md-raised md-primary launch" aria-label="ExportToCSV" ng-click="cotacaoCtrl.ExportToCsv()">
+            <md-icon md-svg-icon="img/svg/content-save.svg" class="dark-theme-icon"></md-icon>
+            <span style="color: #fff">Exportar para CSV</span>
+        </md-button> 
+    </md-content>
+</md-sidenav>

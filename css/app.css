@@ -1,0 +1,86 @@
+div.detail {
+    margin-left: 56px;
+    margin-right: 56px;  
+}
+
+.hidden {
+    display: none;   
+}
+
+/* Icones */
+md-input-container.md-icon-float > label {
+    margin-left: 56px;   
+}
+
+md-input-container>md-icon {
+    top: 15px;   
+}
+
+md-input-container.search>md-icon {
+    top: 30px;   
+}
+
+.dark-theme-icon {
+    fill: #fff;
+}
+
+md-input-container.md-docs-dark-theme > md-icon.up {
+    fill: #67B18C;
+}
+
+md-input-container.md-docs-dark-theme > md-icon.down {
+    fill: #D66665;
+}
+
+md-input-container.md-docs-dark-theme > md-icon.static {
+    fill: #7FB1CA;
+}
+
+/* Alterações na aparência dos gráficos */
+/* Linhas e pontos */
+.ct-chart .ct-series.ct-series-a .ct-line {
+    stroke: #E49898;   
+}
+
+.ct-chart .ct-series.ct-series-a .ct-point {
+    stroke: #E49898;   
+}
+
+/* Grade */
+.ct-chart .ct-grid {
+    stroke: gray;   
+}
+
+/* Textos dos Eixos */
+.ct-chart .ct-label.ct-horizontal {
+    color: gray;
+}
+.ct-chart .ct-label.ct-vertical {
+    color: gray;
+}
+
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    display: inline-block;
+    min-width: 5em;
+    padding: .5em;
+    background: #F4C63D;
+    color: #453D3F;
+    font-weight: 700;
+    text-align: center;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.tooltip:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top-color: #F4C63D
+}

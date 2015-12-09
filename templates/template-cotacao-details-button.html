@@ -1,0 +1,4 @@
+<md-button class="md-fab md-primary md-mini" aria-label="Comment" ng-show="acao.LastTradePriceOnly" ng-click="cotacaoCtrl.ToggleDetails(acao.Symbol)">
+    <i class="mdi mdi-plus" ng-show="!cotacaoCtrl.IsDetailOpen(acao.Symbol.replace('.','\\.')+cotacaoCtrl.detailDivSuf)"></i>
+    <i class="mdi mdi-minus" ng-show="cotacaoCtrl.IsDetailOpen(acao.Symbol.replace('.','\\.')+cotacaoCtrl.detailDivSuf)"></i>
+</md-button>

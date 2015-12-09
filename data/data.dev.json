@@ -1,0 +1,15 @@
+{
+    "acoes": [
+        {"key": "TCNO4.SA"}, 
+		{"key": "BOBR4.SA"}, 
+		{"key": "POMO4.SA"}, 
+		{"key": "POSI3.SA"}, 
+		{"key": "HAGA3.SA"}, 
+		{"key": "POMO3.SA"}, 
+		{"key": "OSXB3.SA"}, 
+		{"key": "AORE3.SA"}, 
+		{"key": "KLBN3.SA"}, 
+		{"key": "GPCP3.SA"}, 
+		{"key": "USIM3.SA"}
+    ]
+}

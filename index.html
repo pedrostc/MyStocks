@@ -1,0 +1,53 @@
+<html ng-app="CotacaoBolsaApp">
+    <head>
+        <meta name="viewport" content="initial-scale=1" />
+       
+        <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+        <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+        <link rel="stylesheet" href="bower_components/chartist/dist/chartist.min.css">
+        <link rel="stylesheet" href="css/app.css">
+                
+        <title>Cota&ccedil;&atilde;o Bolsa</title>
+        
+    </head>
+    <body layout="column" md-theme="docs-dark">
+        <section  ng-controller="CotacaoController as cotacaoCtrl" >            
+            <el-toolbar></el-toolbar>
+            <div layout="row" flex>
+                <side-menu></side-menu>
+                <div layout="column" flex id="content">
+                    <md-content layout="column" flex class="md-padding" layout-padding>
+                            <md-content ng-repeat="acao in cotacaoCtrl.acoes" layout-align="center">
+                                <div layout="row" layout-align="space-around">
+                                    <cotacao-item flex></cotacao-item>
+                                    <cotacao-detail-button></cotacao-detail-button>
+                                </div>
+                                <cotacao-detail></cotacao-detail>
+                            </md-content>
+                    </md-content>
+                </div>
+            </div>
+        </section>
+        <!-- DataHandling Scripts -->
+        <script type="text/javascript" src="js/internalModules/dataHandling.js"></script>
+        <!-- Angular Scripts -->
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-touch/angular-touch.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-aria/angular-aria.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-material/angular-material.min.js"></script>
+        <!-- jQuery Scripts -->
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- Chartist -->
+        <script type="text/javascript" src="bower_components/chartist/dist/chartist.min.js"></script>
+        <!-- Custom Scripts -->
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/util.js"></script>
+        <!-- Angular Modules Scripts -->
+        <script type="text/javascript" src="js/angularModules/chartModule.js"></script>
+        <script type="text/javascript" src="js/angularModules/stockDetailsModule.js"></script>
+        <script type="text/javascript" src="js/angularModules/toolbarModule.js"></script>
+        <script type="text/javascript" src="js/angularModules/sideMenuModule.js"></script>
+    </body>
+</html>
